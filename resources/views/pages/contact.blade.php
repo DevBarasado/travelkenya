@@ -3,9 +3,29 @@
 @section('title', '| Contact')
 
 @section('content')
+  
+  <br>
+
+<div class="container">
+   <div class="row">
+         <div class="col-md-12 ">
+            <h3>Beaches</h3>
+             <br>
+             <P>Kenya has one of the best world presitine beaches with full of marine parks just a couple of miles a way for divers and sealife lovers.</P>
+            <div class="media">
+            <a href="#">        
+            <img class="img-responsive" src="images/img/nyali-beach.jpg"  width="800" height="200"> 
+        </a>
+       </div>      
+    </div>
+  </div>
+</div>
+
+<br>
+
         <div class="row">
             <div class="col-md-12">
-                <h1>Contact Me</h1>
+                <h3>Contact Me</h3>
                 <hr>
                 <form action="{{ url('contact') }}" method="POST">
                     {{ csrf_field() }}
@@ -24,8 +44,8 @@
                         <textarea id="message" name="message" class="form-control">Type your message here...</textarea>
                     </div>
 
-                    <input type="submit" value="Send Message" class="btn btn-success">
+                    <input type="submit" value="Send Message" class="btn btn-success pull-left">
                 </form>
             </div>
-        </div>
+</div>      
 @endsection

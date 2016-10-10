@@ -1,5 +1,5 @@
 <!-- Default Bootstrap Navbar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id="main-nav">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -9,11 +9,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Naitir</a>
+      <a class="navbar-brand " href="#"><img class="img-responsive" src="images/img/magical.png"  width="50" height="50"></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav pull-right ">
         <li class="{{ Request::is('/') ? "active" : "" }}"><a href="/">Home</a></li>
         <li class="{{ Request::is('blog') ? "active" : "" }}"><a href="/blog">Blog</a></li>
         <li class="{{ Request::is('about') ? "active" : "" }}"><a href="/about">About</a></li>
@@ -35,7 +35,7 @@
         
         @else
         
-          <a href="{{ route('login') }}" class="btn btn-default">Admin Login</a>
+          <a href="{{ route('login') }}" class="btn btn-default">Admin</a>
 
         @endif
 
